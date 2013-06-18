@@ -1,4 +1,4 @@
-# GetSetGo
+# GetSetGo [![Build Status](https://travis-ci.org/usmanhalalit/GetSetGo.png?branch=master)](https://travis-ci.org/usmanhalalit/GetSetGo)
 A dynamic getter-setter library for PHP 5.4+.
 
 You can use methods like `setFoo('bar')` and `getFoo()`, which you DON'T have to create (in your class). GetSetGo will make these methods work for you automatically as long as you have a `$foo` property in your class. 
