@@ -19,8 +19,7 @@
 	],
 	
 	"require": {
-		"php": ">=5.4.0",
-		"jan-swiecki/simple-annotations": "dev-master"
+		"php": ">=5.4.0"
 	},
 	
 	"require-dev": {
@@ -29,6 +28,7 @@
     
 	"autoload":	{
 		"psr-0": {
+            "DocBlockReader": "src/",
 			"GetSetGo": "src/"
 		}
 	}
