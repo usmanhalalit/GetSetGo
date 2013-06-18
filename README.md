@@ -74,3 +74,39 @@ ___
      * @var \stdClass
      */
     protected $shouldBeStdClass;
+
+___
+
+    /**
+     * Should be an array only.
+     *
+     * @var Array
+     */
+    protected $shouldBeArray;
+
+___
+
+    /**
+     * Should be a string only
+     *
+     * @var String
+     */
+    protected $shouldBeString;
+
+___
+
+    /**
+     * Should be a number only.
+     *
+     * @var Number
+     */
+    protected $shouldBeNumber;
+
+___
+
+    /**
+     * Should be an array only.
+     *
+     * @var Object
+     */
+    protected $shouldBeObject;
