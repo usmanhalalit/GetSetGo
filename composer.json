@@ -1,0 +1,35 @@
+{
+	"name": "usmanhalalit/get-set-go",
+	"description": "Dynamic Setter-Getter for PHP 5.4+",
+	"homepage": "https://github.com/usmanhalalit/get-set-go",
+	"keywords": ["getter", "setter", "trait"],
+	"license": "MIT",
+	"authors":
+	[
+		{
+			"name": "Sheikh Heera",
+			"email": "info@heera.it",
+			"role": "Developer"
+		},
+		{
+			"name": "Muhammad Usman",
+			"email": "hi@usman.it",
+			"role": "Developer"
+		}
+	],
+	
+	"require": {
+		"php": ">=5.4.0",
+		"jan-swiecki/simple-annotations": "dev-master"
+	},
+	
+	"require-dev": {
+
+    },
+    
+	"autoload":	{
+		"psr-0": {
+			"GetSetGo": "src/"
+		}
+	}
+}
