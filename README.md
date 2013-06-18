@@ -17,6 +17,10 @@ Learn to use composer and add this to require (in your composer.json):
 
 Just add this in your classes:
 
+    use \GetSetGo\SetterGetter;
+
+Example:
+
     Class MyClass{
         use \GetSetGo\SetterGetter;
     	
