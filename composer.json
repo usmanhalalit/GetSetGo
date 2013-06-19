@@ -1,14 +1,14 @@
 {
 	"name": "usmanhalalit/get-set-go",
 	"description": "Dynamic Setter-Getter for PHP 5.4+",
-	"homepage": "https://github.com/usmanhalalit/get-set-go",
+	"homepage": "https://github.com/usmanhalalit/GetSetGo",
 	"keywords": ["getter", "setter", "trait"],
 	"license": "MIT",
 	"authors":
 	[
 		{
 			"name": "Sheikh Heera",
-			"email": "info@heera.it",
+			"email": "mail@heera.it",
 			"role": "Developer"
 		},
 		{
