@@ -7,11 +7,13 @@ It makes use of Traits, so `using` it is super simple. You can restrict to only 
 
 ## Installation
 
-GetSetGo uses Composer to make hassles Go.
+GetSetGo uses [Composer](http://getcomposer.org/) to make hassles Go.
 
 Learn to use composer and add this to require (in your composer.json):
 
     "usmanhalalit/get-set-go": "dev-master"
+
+Library on [Packagist](https://packagist.org/packages/usmanhalalit/get-set-go).
 
 ## Usage
 
@@ -20,17 +22,20 @@ Just add this in your classes:
     use \GetSetGo\SetterGetter;
 
 Example:
+```PHP
+Class MyClass{
+    use \GetSetGo\SetterGetter;
 
-    Class MyClass{
-        use \GetSetGo\SetterGetter;
-    	
-		property $foo;
-    }
+    property $foo;
+}
+```
 Now use it as
-	$myClass = new MyClass;
-	
-	$myClass->setFoo('bar');
-	echo $myClass->getFoo();
+```PHP
+$myClass = new MyClass;
+
+$myClass->setFoo('bar');
+echo $myClass->getFoo();
+```
 
 
 **That's it.**
@@ -38,79 +43,84 @@ Now use it as
 ### Restrict Getter or Setter or Both
 
 You can use annotation in you class property if you want to disable setter, getter or both.
-
-	/**
-	 * We can't use setSomeProperty() anymore.
-	 *
-	 * @var
-	 * @setter false
-	 */
-	protected $someProperty;
-
+```PHP
+/**
+ * We can't use setSomeProperty() anymore.
+ *
+ * @var
+ * @setter false
+ */
+protected $someProperty;
+```
+___
+```PHP
+/**
+ * We can't use getSomeProperty() anymore.
+ *
+ * @var \stdClass
+ * @getter false
+ */
+protected $someProperty;
+```
 ___
 
-	/**
-	 * We can't use getSomeProperty() anymore.
-	 *
-	 * @var \stdClass
-	 * @getter false
-	 */
-	protected $someProperty;
-
-___
-
-
-	/**
-	 * We can't use setSomeProperty() or getSomeProperty().
-	 *
-	 * @getter false
-	 * @setter false
-	 */
-	protected $someProperty;
-
+```PHP
+/**
+ * We can't use setSomeProperty() or getSomeProperty().
+ *
+ * @getter false
+ * @setter false
+ */
+protected $someProperty;
+```
 
 ### Force a Type or Class
 
-
-    /**
-     * Should be an instance of stdClass only.
-     *
-     * @var \stdClass
-     */
-    protected $shouldBeStdClass;
-
+```PHP
+/**
+ * Should be an instance of stdClass only.
+ *
+ * @var \stdClass
+ */
+protected $shouldBeStdClass;
+```
 ___
-
-    /**
-     * Should be an array only.
-     *
-     * @var Array
-     */
-    protected $shouldBeArray;
-
+```PHP
+/**
+ * Should be an array only.
+ *
+ * @var Array
+ */
+protected $shouldBeArray;
+```
 ___
-
-    /**
-     * Should be a string only
-     *
-     * @var String
-     */
-    protected $shouldBeString;
-
+```PHP
+/**
+ * Should be a string only
+ *
+ * @var String
+ */
+protected $shouldBeString;
+```
 ___
-
-    /**
-     * Should be a number only.
-     *
-     * @var Number
-     */
-    protected $shouldBeNumber;
-
+```PHP
+/**
+ * Should be a number only.
+ *
+ * @var Number
+ */
+protected $shouldBeNumber;
+```
 ___
+```PHP
+/**
+ * Should be an array only.
+ *
+ * @var Object
+ */
+protected $shouldBeObject;
+```
 
-    /**
-     * Should be an array only.
-     *
-     * @var Object
-     */
-    protected $shouldBeObject;
+## Notes
+
+GetSetGo assumes that you use proper camelCase. So name your properties like `$pdoInstance` (not `$PDOInstance`) and call set `setPdoInstance()` method.
