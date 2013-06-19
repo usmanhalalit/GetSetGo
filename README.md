@@ -26,7 +26,7 @@ Example:
 Class MyClass{
     use \GetSetGo\SetterGetter;
 
-    property $foo;
+    protected $foo;
 }
 ```
 Now use it as
