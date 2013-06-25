@@ -52,7 +52,7 @@ trait SetterGetter
             // Check if user has set @setter to false, so we won't set the value
             if (!$setter) {
                 throw new SetterGetterException('Can\'t set restricted property ' . $property, 1);
-            // All parameters are given
+                // All parameters are given
             } elseif (count($params) < 1 || !isset($params[0])) {
                 throw new \InvalidArgumentException("Invalid parameter given, method <strong>$method</strong> requires 1 parameter,  but "
                 . count($params) . " given!", 2);
