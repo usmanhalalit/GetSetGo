@@ -12,7 +12,7 @@ GetSetGo uses [Composer](http://getcomposer.org/) to make hassles Go.
 
 Learn to use composer and add this to require (in your composer.json):
 
-    "usmanhalalit/get-set-go": "dev-master"
+    "usmanhalalit/get-set-go": "1.*@dev"
 
 Library on [Packagist](https://packagist.org/packages/usmanhalalit/get-set-go).
 
